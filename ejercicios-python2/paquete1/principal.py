@@ -1,6 +1,7 @@
 """
     Para llamar a paquetes de la misma altura
 """
+# el sys sirve para accedwer a caracteristicas y agregar una ruta
 import sys
 sys.path.append('../')
 from paquete2.variables import limite

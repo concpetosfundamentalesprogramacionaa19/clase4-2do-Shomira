@@ -30,10 +30,10 @@ try:
 except TypeError as ex:
     print("Algo paso en el programa (TypeError)\n")
     print(ex)
-    print(type(ex))
 except Exception as ex:
     print("Algo paso en el programa (Exeption)\n")
     print(ex)
+    print(type(ex))
     print(type(ex))
     
 

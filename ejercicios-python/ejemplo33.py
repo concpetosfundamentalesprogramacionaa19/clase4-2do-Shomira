@@ -18,7 +18,7 @@ Traceback (most recent call last):
     promedio = int(nota1) / nota2
 TypeError: unsupported operand type(s) for /: 'int' and 'str'
 """
-
+#Importa la clse creada para excepciones
 from librerias.misexcepciones import NumeroNegativosError
 
 print("Ingreso de datos de empleado\n")
@@ -31,15 +31,17 @@ try:
     nota2 = int(nota2)
     if (nota1 < 0) or (nota2 < 0):
         raise NumeroNegativosError("No se puede ingresar valor menore a cero")
-    promedio = int(nota1) / int(nota2)
+    promedio = (nota1) / (nota2)
     print("Los datos ingresados son: \nNombre: %s\nNota1: %d \nNota2: %d\
             \nPromedio: %f" % (nombre, int(nota1), int(nota2), promedio))
 except TypeError as ex:
     print("Algo paso en el programa (TypeError)\n")
     print(ex)
     print(type(ex))
+    #Excepcion generada 
 except NumeroNegativosError as ex:
     print("Algo paso en el programa (NumeroNegativosError)\n")
+    #Print ex imprime la cadena 
     print(ex)
     print(type(ex))
 except Exception as ex:
